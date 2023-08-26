@@ -1,0 +1,264 @@
+.hero-section{
+    background-image: url(https://gymate-stefvndev.vercel.app/static/media/hero-img.40c8355a31f73340b733.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.hero-text{
+    width: 30rem;
+    gap: 1rem;
+    padding: 1rem;
+    margin-right: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   
+}
+
+.class-btn{
+    background-color: white;
+    padding: 1rem 1.5rem;
+    font-weight: bold; 
+    position: relative; 
+}
+.class-btn::after{
+    content: '';
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    width: 10.6rem;
+    height: 3.6rem;
+    transition: all 0.4s;  
+
+}
+.class-btn:hover::after{
+    content: '';
+    top: 0;
+    left: 0;
+}
+.about-section{
+    background-image: url(/src/assets/background.jpg);
+}
+.about-card-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -5rem;
+}
+.about-card{
+    background-color: white;
+    width: 25rem;
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 1rem;
+    border-radius: 40px 0px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.about-card:hover{
+    background-image: url(/src/assets/info-card-bg.jpg);
+    color: white;
+}
+.about-bottom-section{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+    padding:2rem 1rem;
+}
+.bottom-text-section{
+    width: 40%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.bottom-card{
+    width: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.bottom-card:nth-last-child(1){
+    border: none;
+}
+.bottom-card img{
+    width: 3rem;
+    margin: 0.5rem 0;
+}
+.tour-btn{
+    background-color: #ff0338;
+    padding: 1rem 1.5rem;
+    font-weight: bold; 
+    position: relative; 
+    width: 10.6rem;
+    color: white;
+    margin-top: 3rem;
+}
+.tour-btn::after{
+    content: '';
+    border: 2px solid #ff0338;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    width: 10.6rem;
+    height: 3.4rem;
+    transition: all 0.4s;  
+
+}
+.tour-btn:hover::after{
+    content: '';
+    top: 0;
+    left: 0;
+}
+.bottom-img-section{
+    background-image: url(/src/assets/girl-redbg.svg);
+    background-repeat: no-repeat;
+    background-position: 70%;
+    background-size:contain;
+}
+.bottom-img-section img{
+    height: 28rem;
+}
+.classes-section{
+    padding: 3rem;
+    width: 85%;
+    margin: 0 auto;
+
+}
+.classes-card--section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    padding: 2rem 0;
+}
+.classes-card--one,.classes-card--two,.classes-card--three,.classes-card--four,.classes-card--five,.classes-card--six{
+    height: 20rem;
+    overflow: hidden;
+    width: 100%;
+}
+.classes-card--one{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.classes-card--six{
+    grid-column-start: 3;
+    grid-column-end:5 ;
+    grid-row-start: 2;
+}
+.classes-img--one{
+    background-image: url(/src/assets/cycling.jpg);
+}
+.classes-img--two{
+    background-image: url(/src/assets/karate.jpg);
+}
+.classes-img--three{
+    background-image: url(/src/assets/power.jpg);
+}
+.classes-img--four{
+    background-image: url(/src/assets/meditation.jpg);
+}
+.classes-img--five{
+    background-image: url(/src/assets/mma.jpg);
+}
+.classes-img--six{
+    background-image: url(/src/assets/workout.jpg);
+}
+
+.classes-img--one,.classes-img--two,.classes-img--three,.classes-img--four,.classes-img--five,.classes-img--six{
+    height: 100%;
+    width: 100%;
+    background-position: 50%;
+    background-size:cover;
+    cursor: pointer;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: all 0.5s ease-in;
+}
+.classes-img--one:hover,.classes-img--two:hover,.classes-img--three:hover,.classes-img--four:hover,.classes-img--five:hover,.classes-img--six:hover{
+    filter: none;
+    transform: scale(1.2);
+}
+
+
+.classes-card--body{
+    position: absolute;
+    bottom: 2rem;
+    left: 1rem;
+    color: white;
+}
+.classes-card--body h3{
+font-weight: bold;
+font-size: 1.5rem;
+margin: 1rem 0;
+}
+.classes-card--body p{
+    background-color:#ff0338;
+    padding: 0.3rem 0.4rem;
+}
+.featured{
+    background-image: url(/src/assets/cta-bg.png);
+    background-repeat: no-repeat;
+    height: 10rem;
+    background-size: cover;
+    width: 100%;
+    background-position:50%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 10rem;
+}
+.choose-section{
+    background-image: url(/src/assets/choose-bg.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.choose-body{
+    width: 85%;
+    margin: 0 auto;
+    padding: 4rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  
+}
+
+.choose-img--two{
+ background-image: url(/src/assets/play.png);
+ background-size:contain;
+ height: 5.5rem;
+ background-repeat: no-repeat;
+ background-position:100%;
+ position: absolute;
+ top: 16rem;
+ left: 11rem;
+ width: 4rem;
+ z-index: 11;
+ cursor: pointer;
+}
+.choose-section--two{
+    width: 50%;
+}
+.choose-card--section{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
